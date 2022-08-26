@@ -1,0 +1,32 @@
+.header {
+	flex: 1;
+}
+
+.banner {
+	width: 100%;
+	display: block;
+}
+.banner > .nav-item {
+	display: block;
+}
+.banner > .banner-image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.banner > .titleheader {
+}
+
+.banner > .subtitleheader {
+	text-shadow: 15px;
+	text-indent: 5px;
+	color: blue;
+}
+
+#about {
+	flex: 1;
+}
+#about > .img {
+	width: 20%;
+	height: 50%;
+}
