@@ -1,10 +1,9 @@
-header {
-	display: flex;
-	flex: basis 100%;
-}
-
 h2 {
 	color: darkgreen;
+}
+h2.subtitleheader {
+	text-indent: 5px;
+	color: orangered;
 }
 body {
 	background-color: burlywood;
@@ -16,29 +15,30 @@ img.images {
 	align-items: flex-start;
 }
 
-img#bannerImage {
-	/* width: 100%; */
+.banner {
+	border: 5px solid blue;
 	display: flex;
-	align-self: stretch;
-	border: 5px red;
+
+	flex-wrap: wrap;
+	flex-direction: row;
 }
-header.banner {
+.banner > #titleBanner {
 	display: flex;
-	justify-content: left;
-	align-self: flex-start;
 	flex-direction: column;
 }
+.banner > #bannerImage {
+	width: 100%;
+	display: flex;
+	align-self: stretch;
+	border: 5px solid red;
+}
 header.nav-item {
+	border: 5px solid blue;
 	display: flex;
 	align-items: flex-end;
 	justify-content: right;
 }
 
-.banner > .subtitleheader {
-	text-shadow: 15px;
-	text-indent: 5px;
-	color: blue;
-}
 #about {
 	display: flex;
 }
