@@ -1,26 +1,31 @@
-.header {
+header {
 	display: flex;
+	flex: basis 100%;
 }
 
-.banner {
+img.images {
+	max-width: 400px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+img#bannerImage {
+	/* width: 100%; */
+	display: flex;
+	align-self: stretch;
+	border: 5px red;
+}
+header.banner {
 	display: flex;
 	justify-content: left;
 	align-self: flex-start;
 	flex-direction: column;
 }
-.nav-item {
+header.nav-item {
 	display: flex;
 	align-items: flex-end;
 	justify-content: right;
-	flex-direction: column;
-}
-.banner > .banner-image {
-	display: block;
-	width: 100%;
-	height: auto;
-	display: block;
-}
-.banner > .titleheader {
 }
 
 .banner > .subtitleheader {
@@ -30,11 +35,4 @@
 }
 #about {
 	display: flex;
-}
-
-img {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: row;
 }
