@@ -1,5 +1,5 @@
 .header {
-	flex: 1;
+	display: flex;
 }
 
 .banner {
@@ -30,11 +30,11 @@
 }
 #about {
 	display: flex;
-	/* flex: 1 flex-shrink; */
 }
 
-.img {
+img {
 	display: flex;
 	flex-wrap: wrap;
-	max-block-size: 50%;
+	align-items: center;
+	flex-direction: row;
 }
