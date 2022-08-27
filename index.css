@@ -14,7 +14,15 @@ img.images {
 	flex-flow: row wrap;
 	align-items: flex-start;
 }
+.button {
+	color: magenta;
+	background-color: black;
 
+	cursor: pointer;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+}
 .banner {
 	border: 5px solid blue;
 	display: flex;
