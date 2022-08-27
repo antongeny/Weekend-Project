@@ -3,6 +3,12 @@ header {
 	flex: basis 100%;
 }
 
+h2 {
+	color: darkgreen;
+}
+body {
+	background-color: burlywood;
+}
 img.images {
 	max-width: 400px;
 	display: flex;
