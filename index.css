@@ -1,3 +1,6 @@
+/* 
+	Great experimenting with different kinds of selectors and their overrides here!
+*/
 h2 {
 	color: darkgreen;
 }
@@ -7,13 +10,28 @@ h2.subtitleheader {
 }
 body {
 	background-color: burlywood;
+	/* 
+			One awkward thing that comes built into the browser is it has a 
+			built-in 5px margin on the body element - its usually worth tossing a 
+			`margin: 0` into this selector to nip that off the bat
+		*/
 }
+/* 
+	Remember, if you want to organize items using flex `display: flex` has to go
+	on the container - not on the items themselves. If you want these to organize
+	themselves into a row you'll need to move these styles onto `toolsPageBody`
+*/
 img.images {
 	max-width: 400px;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: flex-start;
 }
+/* 
+	Awesome work playing around with styles here. Your flex styles are working
+	in this case because HTML treats "text" as a child of your "p" tags - though
+	normally you'll want a container to hold the buttons in.
+*/
 .button {
 	color: magenta;
 	background-color: black;
@@ -23,6 +41,7 @@ img.images {
 	justify-content: right;
 	align-items: right;
 }
+
 .banner {
 	border: 5px solid blue;
 	display: flex;
@@ -30,16 +49,25 @@ img.images {
 	flex-wrap: wrap;
 	flex-direction: row;
 }
+/* Because titleBanner is an ID, you can just do #titleBanner */
 .banner > #titleBanner {
 	display: flex;
 	flex-direction: column;
 }
+/* Because bannerImage is an ID, you can just do #bannerImage */
 .banner > #bannerImage {
 	width: 100%;
 	display: flex;
 	align-self: stretch;
 	border: 5px solid red;
 }
+/* 
+	This selector translates to "Select any header that has the nav-item class"
+	which doesn't look like it's picking anything up. Instead, i'd either add
+	a space between header and .nav-item so that it turns into "Select any element
+	with the nav-item class thats a child of a header element" - or alternatively
+	do .nav-item by itself since your nav-items all look the same.
+*/
 header.nav-item {
 	border: 5px solid blue;
 	display: flex;
