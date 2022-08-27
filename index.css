@@ -3,13 +3,19 @@
 }
 
 .banner {
-	width: 100%;
-	display: block;
+	display: flex;
+	justify-content: left;
+	align-self: flex-start;
+	flex-direction: column;
 }
-.banner > .nav-item {
-	display: block;
+.nav-item {
+	display: flex;
+	align-items: flex-end;
+	justify-content: right;
+	flex-direction: column;
 }
 .banner > .banner-image {
+	display: block;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -22,11 +28,13 @@
 	text-indent: 5px;
 	color: blue;
 }
-
 #about {
-	flex: 1;
+	display: flex;
+	/* flex: 1 flex-shrink; */
 }
-#about > .img {
-	width: 20%;
-	height: 50%;
+
+.img {
+	display: flex;
+	flex-wrap: wrap;
+	max-block-size: 50%;
 }
