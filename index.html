@@ -8,10 +8,12 @@
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
+		<!-- Since this header only exists to wrap your banner  -->
+		<!-- div you can get rid of one of them - you only need one -->
+		<!-- container around your elements -->
 		<header>
 			<div class="banner">
 				<div id="titleBanner">
-
 					<h1 class="titleheader">Anton's Obsession:</h1>
 					<h2 class="subtitleheader">Japanese Tools</h2>
 				</div>
@@ -40,8 +42,12 @@
 				<img src="images/oldschool_ripping.jpg" id="bannerImage" />
 			</div>
 
+			<!-- Careful with your tags, it doesn't look like this section -->
+			<!-- is closing anything off - there's no starting section tag for it -->
+			<!-- to build off of -->
 		</section>
 	</header>
+	<!-- V Love seeing this, having semantic comments in your code is a great practice -->
 	<!-- content stuff, linking from nav-item buttons -->
 
 	<section id="projects">
@@ -51,6 +57,8 @@
 
 				<h2>A Prototype Home</h2>
 				<p>Here was a highly involved, eco-friendly, home. We cut the trees ourselves, then shaped the wood as well. The method would eventually be greener with non-toxic materials, more durable than the typical ballon-framed homes. Insulation would be made from hemp and walls would be made from plaster, which are all carbon sequestering materials.</p>
+				<!-- You may end up wanting a div to hold these images together -->
+				<!-- that way you can style them without affecting your text above -->
 				<img src="/images/prototype_framecomplete.jpg" class="images">
 				<img src="/images/prototype_POV.jpg" class="images">
 				<img src="/images/prototype_joist.jpg" class="images">
@@ -88,6 +96,12 @@
 		<h3>About</h3>
 		<div id="aboutPageBody">
 			<p>This is me, doing an unrelated job.</p>
+			<!-- This image looks like it's much larger than the screen, -->
+			<!-- causing everything else to be scrollable. It might be worth -->
+			<!-- tossing a maximum width on here to limit how large it is -->
+			<!-- (100 vw or smaller would probably make sense) -->
+			
+			<!-- Also great picture, looking snazzy in it! -->
 			<img src="/images/me.jpg" class="me">
 		</div>
 
