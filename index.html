@@ -6,36 +6,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Anton's Obsessions</title>
 		<link rel="stylesheet" href="index.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- defer makes this code occur at the end -->
+		<script defer src = "index.js"> console.log("hello world") </script>
+
 	</head>
-	<body>
+	<body class="body">
 		<header>
 			<div class="banner">
+				<!-- Title -->
 				<div id="titleBanner">
-
 					<h1 class="titleheader">Anton's Obsession:</h1>
 					<h2 class="subtitleheader">Japanese Tools</h2>
-				</div>
 
-				<!-- Bottons: about, tools, projects -->
-				<nav>
-					<div class="nav-item">
+					<!-- Bottons: about, tools, projects, darkMode button -->
+					<div class="darkButton">
+						<button class="darkMode">Dark Mode</button>
+					</div>
+					<nav>
+						<div class="nav-item">
 
 							<a href="#projects" class="button">Projects</a>
 
-					</div>
+						</div>
 
-					<div class="nav-item">
+						<div class="nav-item">
 
 							<a href="#tools" class="button">Tools</a>
 
-					</div>
+						</div>
 
-					<div class="nav-item">
+						<div class="nav-item">
 
 							<a href="#about" class="button">About</a>
 
-					</div>
-				</nav>
+						</div>
+					</nav>
+				</div>
 
 				<img src="images/oldschool_ripping.jpg" id="bannerImage" />
 			</div>
@@ -47,7 +54,7 @@
 	<section id="projects">
 		<h1>Projects I've worked on</h1>
 			<div id="projectsPageBody">
-				<p>Some of my projects I've worked on</p>
+				<p class = "paragraph">Some of my projects I've worked on</p>
 
 				<h2>A Prototype Home</h2>
 				<p>Here was a highly involved, eco-friendly, home. We cut the trees ourselves, then shaped the wood as well. The method would eventually be greener with non-toxic materials, more durable than the typical ballon-framed homes. Insulation would be made from hemp and walls would be made from plaster, which are all carbon sequestering materials.</p>
@@ -92,4 +99,6 @@
 		</div>
 
 	</body>
-</html>
+	<!-- loads Javascript file -->
+	<script type="text/javascript" src="/script.js"></script>
+	</html>
