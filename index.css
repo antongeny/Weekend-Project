@@ -6,20 +6,15 @@ h2.subtitleheader {
 	color: orangered;
 }
 .body {
-	background-color: burlywood;
-}
-img.images {
-	max-width: 400px;
 	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
+	background-color: burlywood;
+	flex-direction: column;
 }
+
 .button {
 	color: magenta;
-	background-color: black;
-
 	cursor: pointer;
-	display: flex;
+	align-items: flex-end;
 	justify-content: right;
 }
 header {
@@ -32,17 +27,19 @@ header {
 	flex-direction: row;
 }
 .banner > #bannerImage {
-	width: 100%;
-	align-self: stretch;
+	width: 99.5%;
 	border: 3px solid red;
-	justify-content: left;
-}
-header.nav-item {
-	border: 5px solid blue;
+	flex-direction: column-reverse;
 	align-items: flex-end;
-	justify-content: right;
 }
 
-#about {
-	display: flex;
+img.images {
+	max-height: 480px;
+	max-width: 45%;
+	flex-direction: row;
+	justify-items: center;
+}
+
+#about .me {
+	width: 75%;
 }
