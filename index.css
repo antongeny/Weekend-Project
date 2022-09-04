@@ -41,5 +41,9 @@ img.images {
 }
 
 #about .me {
-	width: 75%;
+	width: 66.6%;
+	height: auto;
+}
+
+.darkButton {
 }

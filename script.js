@@ -1,11 +1,14 @@
-const darkModeButton = document.getElementsByClassName("darkMode");
+// const darkModeButton = document.getElementsByClassName("darkMode")[0];
+darkModeButton = document.querySelector(".darkMode");
+console.log(darkModeButton);
+darkModeButton.addEventListener("click", toggleDarkMode);
 
-darkModeButton.addEventlistener("click", toggleDarkMode)
+function toggleDarkMode(event) {
+	const darkToggle = event.target;
 
-function toggleDarkMode(event){
-  const darkToggle = event.target;
-
-  if(darkToggle.className)
+	console.log("dark toggle works");
+	if (darkToggle.className) {
+	}
 }
 
 // $("") is a universal function;
