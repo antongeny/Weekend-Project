@@ -1,30 +1,39 @@
+.body {
+	display: flex;
+	background-color: burlywood;
+	flex-direction: column;
+	margin: 0;
+}
+.paragraph {
+	flex-direction: column;
+	margin-right: 10%;
+	margin: 5px;
+	align-items: flex-start;
+}
 h2 {
 	color: darkgreen;
+	margin-left: 5px;
 }
 
 #header {
 	border: 5px solid blue;
 }
 #titleBanner {
-	border: 5px solid pink;
-	align-items: flex-start;
-	flex-direction: row;
-	justify-content: right;
-}
-.body {
 	display: flex;
-	background-color: burlywood;
-	flex-direction: column;
+	flex-direction: row;
+	border: 3px solid black;
 }
+
 #titleandsubtitle {
-	text-indent: 5px;
+	text-indent: 0px;
 	color: orangered;
-	align-items: center;
 	border: 3px solid green;
 }
 .buttonGroup {
-	flex-direction: row;
-	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	border: 3px solid red;
+	justify-content: right;
 }
 .button {
 	color: magenta;
