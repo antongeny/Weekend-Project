@@ -5,7 +5,7 @@ Take the site you created last weekend and add interactivity to it
 Requirements:
 [x] Add a button to your page
 [x] Add a click listener to your button
-[] On click, restyle another element on your page in some way
+[x] On click, restyle another element on your page in some way
 ex: Change the color of some text on your site
 Create a mini Cookie-Clicker replica
 Requirements:

@@ -1,13 +1,16 @@
 // const darkModeButton = document.getElementsByClassName("darkMode")[0];
-darkModeButton = document.querySelector(".darkMode");
+const darkModeButton = document.querySelector(".darkMode");
 console.log(darkModeButton);
 darkModeButton.addEventListener("click", toggleDarkMode);
-
+const bodyColor = document.querySelector(".body");
 function toggleDarkMode(event) {
 	const darkToggle = event.target;
 
 	console.log("dark toggle works");
-	if (darkToggle.className) {
+	if (bodyColor.className != "darkColors") {
+		bodyColor.className = "darkColors";
+	} else {
+		bodyColor.className = "defaultColors";
 	}
 }
 

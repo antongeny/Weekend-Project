@@ -1,43 +1,49 @@
 h2 {
 	color: darkgreen;
 }
-h2.subtitleheader {
-	text-indent: 5px;
-	color: orangered;
+
+#header {
+	border: 5px solid blue;
+}
+#titleBanner {
+	border: 5px solid pink;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: right;
 }
 .body {
 	display: flex;
 	background-color: burlywood;
 	flex-direction: column;
 }
-
+#titleandsubtitle {
+	text-indent: 5px;
+	color: orangered;
+	align-items: center;
+	border: 3px solid green;
+}
+.buttonGroup {
+	flex-direction: row;
+	align-items: flex-end;
+}
 .button {
 	color: magenta;
 	cursor: pointer;
-	align-items: flex-end;
-	justify-content: right;
 }
-header {
-	border: 5px solid blue;
-	display: flex;
-	flex-direction: column;
-}
-#titleBanner {
-	align-items: flex-start;
-	flex-direction: row;
+
+.darkButton {
+	cursor: pointer;
 }
 .banner > #bannerImage {
-	width: 99.5%;
-	border: 3px solid red;
-	flex-direction: column-reverse;
-	align-items: flex-end;
+	width: 100%;
+	flex-direction: row;
+	align-items: stretch;
 }
 
 img.images {
 	max-height: 480px;
-	max-width: 45%;
+	max-width: 30%;
 	flex-direction: row;
-	justify-items: center;
 }
 
 #about .me {
@@ -45,5 +51,11 @@ img.images {
 	height: auto;
 }
 
-.darkButton {
+.darkColors {
+	background-color: black;
+	color: gray;
+}
+
+.defaultColors {
+	background-color: burlywood;
 }

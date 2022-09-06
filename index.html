@@ -7,90 +7,45 @@
 		<title>Anton's Obsessions</title>
 		<link rel="stylesheet" href="index.css" />
 		<!-- defer makes this code occur at the end -->
-		<script defer src = "script.js"></script>
+		<script defer src="script.js"></script>
 		<!-- loads Javascript file -->
 		<!-- <script type="text/javascript" src="/script.js"></script> -->
-
 	</head>
 	<body class="body">
-		<header>
+		<header id="header">
 			<div class="banner">
 				<!-- Title -->
 				<div id="titleBanner">
-					<h1 class="titleheader">Anton's Obsession:</h1>
-					<h2 class="subtitleheader">Japanese Tools</h2>
+					<div id="titleandsubtitle">
+						<h1 class="titleheader">Anton's Obsessions:</h1>
+						<h2 class="subtitleheader">Japanese Tools</h2>
+					</div>
 
 					<!-- Bottons: about, tools, projects, darkMode button -->
-					<div class="darkButton">
-						<button class="darkMode">Dark Mode</button>
+					<div class="buttonGroup">
+						<div class="darkMode">
+							<button class="darkButton">Dark Mode</button>
+						</div>
+						<nav class="nagivationItems">
+							<div class="nav-item">
+								<a href="/index.html" class="button">Home</a>
+							</div>
+							<div class="nav-item">
+								<a href="/projects.html" class="button">Projects</a>
+							</div>
+							<div class="nav-item">
+								<a href="/tools.html" class="button">Tools</a>
+							</div>
+							<div class="nav-item">
+								<a href="/about.html" class="button">About</a>
+							</div>
+						</nav>
 					</div>
-					<nav>
-						<div class="nav-item">
-
-							<a href="#projects" class="button">Projects</a>
-
-						</div>
-
-						<div class="nav-item">
-
-							<a href="#tools" class="button">Tools</a>
-
-						</div>
-
-						<div class="nav-item">
-
-							<a href="#about" class="button">About</a>
-
-						</div>
-					</nav>
 				</div>
 
 				<img src="images/oldschool_ripping.jpg" id="bannerImage" />
 			</div>
-
-		</section>
-	</header>
-	<!-- content stuff, linking from nav-item buttons -->
-
-	<section id="projects">
-		<h1>Projects I've worked on</h1>
-			<div id="projectsPageBody">
-				<p class = "paragraph">Some of my projects I've worked on</p>
-
-				<h2>A Prototype Home</h2>
-				<p>Here was a highly involved, eco-friendly, home. We cut the trees ourselves, then shaped the wood as well. The method would eventually be greener with non-toxic materials, more durable than the typical ballon-framed homes. Insulation would be made from hemp and walls would be made from plaster, which are all carbon sequestering materials.</p>
-				<img src="/images/prototype_framecomplete.jpg" class="images">
-				<img src="/images/prototype_post.jpg" class="images">
-				<img src="/images/prototype_frame.jpg" class="images">
-				<img src="/images/prototype_joist.jpg" class="images">
-				<img src="/images/prototype_POV.jpg" class="images">
-
-				<h2>My Very First Timber Frame</h2>
-				<p>This got me learning about tools, using my boss's vintage tools, which were huge and heavy. It got me thinking what other tools are more ergonomic for my small hands. Then I discovered the existence of Japanese woodworking tools. Once I got my hands on my first chisels, I see the value in them and hard to go back to any kinds of tools. </p>
-				<img src="/images/First_assembled.jpg" class="images">
-				<img src="/images/First_braces.jpg" class="images">
-				<img src="/images/First_cuts.jpg" class="images">
-				<img src="/images/First_mortice.jpg" class="images">
-			</div>
-	</section>
-
-	<section id="tools">
-		<h3>Tools</h3>
-		<div id="toolsPageBody">
-			<p>This is an assortment of tools</p>
-			<img src="/images/Ryoba_wide.jpg" class="images" >
-			<img src="/images/timberframe_tools.jpg" class="images" >
-			<img src="/images/usingtool.jpg" class="images">
-			<img src="/images/woodplane.jpg" class="images">
-		</div>
-	</section>
-
-	<section id="about">
-		<h3>About</h3>
-		<div id="aboutPageBody">
-			<p>This is me, doing an unrelated job.</p>
-			<img src="/images/me.jpg" class="me">
-		</div>
-
+		</header>
+		<!-- content stuff, linking from nav-item buttons -->
 	</body>
-	</html>
+</html>
