@@ -1,7 +1,5 @@
 .body {
-	display: flex;
 	background-color: burlywood;
-	flex-direction: column;
 	margin: 0;
 }
 .paragraph {
@@ -14,26 +12,29 @@ h2 {
 	color: darkgreen;
 	margin-left: 5px;
 }
-
-#header {
-	border: 5px solid blue;
+.banner {
+	display: flex;
+	flex-direction: column;
 }
+.banner > #bannerImage {
+	width: 100%;
+}
+
 #titleBanner {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row;
 	border: 3px solid black;
 }
 
 #titleandsubtitle {
-	text-indent: 0px;
+	text-indent: 5px;
 	color: orangered;
+	justify-content: flex-start;
 	border: 3px solid green;
 }
-.buttonGroup {
-	display: flex;
-	flex-direction: column;
+#buttonGroup {
+	justify-content: flex-end;
 	border: 3px solid red;
-	justify-content: right;
 }
 .button {
 	color: magenta;
@@ -41,17 +42,15 @@ h2 {
 }
 
 .darkButton {
+	color: magenta;
+	background-color: rgb(75, 10, 135);
 	cursor: pointer;
-}
-.banner > #bannerImage {
-	width: 100%;
-	flex-direction: row;
-	align-items: stretch;
 }
 
 img.images {
 	max-height: 480px;
 	max-width: 30%;
+	align-content: space-between;
 	flex-direction: row;
 }
 
