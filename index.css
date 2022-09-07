@@ -62,8 +62,10 @@ img.images {
 .darkColors {
 	background-color: black;
 	color: gray;
+	margin: 0;
 }
 
 .defaultColors {
 	background-color: burlywood;
+	margin: 0;
 }
